@@ -1,0 +1,323 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  background: #293f50;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Typography */
+
+h2 {
+  color: #648880;
+}
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 22px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+  color: #648880;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: 400;
+}
+
+cite,
+em {
+  font-style: italic;
+}
+
+/* Leads */
+
+.lead {
+  text-align: center;
+}
+
+.lead p {
+  font-size: 21px;
+  line-height: 33px;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #a9b2b9;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.grid a {
+  color: #646880;
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+}
+
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
+}
+
+/* Home */
+.hero {
+  line-height: 20px;
+  padding: 0 5% 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 20px;
+  flex: 1 100%;
+}
+
+.hero p {
+  font-size: 16px;
+  font-weight: 100;
+  flex: 1 100%;
+  color: #fff;
+}
+
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+
+
+/* Primary Header */
+
+.primary-header {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 100%;
+}
+
+ .logo, .navbar {
+  flex: 1 100%;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 30px;
+  text-transform: uppercase;
+  order: 2;
+  padding-left: 5%;
+  text-align: center;
+}
+
+.navbar {
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  order: 1;
+  padding: 2% 0 2% 2%;
+  text-align: center;
+}
+
+/* Teaser Col/Row */
+
+.grid {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  background: #fff;
+  padding: 8% 5% 8% 5%;
+  flex: 1 100%;
+}
+
+.grid  {
+  border: 4px solid #648880;
+}
+
+/* Primary footer */
+.footer {
+  color: #648880;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+  text-align: center;
+}
+.footer small {
+  font-weight: 400;
+}
+
+
+/* Medium screens */
+
+@media all and (min-width:600px) {
+  .primary-header {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+  }
+
+  .logo, .navbar {
+    flex: 1 auto;
+  }
+
+  .navbar {
+    order: 2;
+    margin: 6% 15% 3.5% auto;
+    align-self: flex-end;
+  }
+
+  .logo {
+    padding: 3% 5% 0 19%;
+    text-align: left;
+  }
+
+  .hero {
+    line-height: 44px;
+    padding: 0 0 5% 0;
+    text-align: center;
+  }
+
+  .grid {
+    flex-direction: row;
+    padding: 5% 10% 5% 15%;
+  }
+
+  .col-1, .col-2, .col-3 {
+    flex: 1 33%;
+    text-align: left;
+    padding-right: 10%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logo {
+    font-size: 48px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    line-height: 44px;
+  }
+
+  .navbar {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .5px;
+  }
+
+  .hero {
+    line-height: 44px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 24px;
+    font-weight: 100;
+  }
+}
